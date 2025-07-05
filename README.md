@@ -84,3 +84,14 @@ Use the included `demo_script.md` to guide a video walkthrough for presentations
 ## 🧠 Credits & Notes
 
 Built to showcase contextual understanding and logical inference from unstructured documents. Ideal for research assistants, educational tools, and smart Q&A applications.
+
+
+## 🎬 Project Demo
+
+[![Watch on YouTube](https://img.shields.io/badge/Watch%20on-YouTube-red?style=for-the-badge&logo=youtube)](https://youtu.be/xwC8BKSzxtk)
+
+🚀 **Check out the video demo** where I walk through the main features of the project, explain its purpose, and show it in action:
+
+[![Project Demo Video](https://img.youtube.com/vi/xwC8BKSzxtk/maxresdefault.jpg)](https://youtu.be/xwC8BKSzxtk)
+
+✨ Click the thumbnail or the button above to watch the full demo on YouTube!
