@@ -21,7 +21,6 @@ st.markdown("""
         background-attachment: fixed;
         overflow-x: hidden;
     }
-    /* Colorful blurred patches for pleasant blend, positioned away from main UI */
     .color-patch1, .color-patch2, .color-patch3, .color-patch4 {
         position: fixed;
         z-index: 0;
@@ -47,7 +46,6 @@ st.markdown("""
         bottom: 8vh; right: 2vw; width: 200px; height: 120px;
         background: radial-gradient(circle, #f4d35e 0%, #6247ea 100%);
     }
-    /* Button and input effects */
     .stButton>button {
         background: linear-gradient(90deg, #6247ea, #e45858, #232946);
         color: #f4f4f4;
@@ -104,7 +102,6 @@ st.markdown("""
         0% { box-shadow: 0 0 20px #6247ea, 0 0 40px #e45858 inset; }
         100% { box-shadow: 0 0 40px #e45858, 0 0 60px #6247ea inset; }
     }
-    /* Neon scrollbars */
     ::-webkit-scrollbar {
         width: 10px;
         background: #232946;
@@ -114,7 +111,6 @@ st.markdown("""
         border-radius: 10px;
         box-shadow: 0 0 10px #6247ea;
     }
-    /* Make the bot name normal, not too bright */
     h1, h2, h3, h4 {
         color: #f4f4f4 !important;
         text-align: center;
@@ -122,7 +118,6 @@ st.markdown("""
         text-shadow: none !important;
         font-weight: 600;
     }
-    /* Research icons (SVG) in background, faded and away from UI */
     .research-icon {
         position: fixed;
         z-index: 0;
@@ -172,7 +167,7 @@ switch2 = st.checkbox("Auto-launch AssistBuddy on startup", value=True)
 switch3 = st.checkbox("Enable global shortcut", value=True)
 
 if st.button("🚀 Launch Assistant"):
-    st.experimental_rerun()  # Simulate proceed
+    st.rerun()  # ✅ fixed here
 
 # ---- Core Functionalities ----
 uploaded_file = st.file_uploader("📂 Upload Research Document (PDF or TXT)", type=["pdf", "txt"])
@@ -195,7 +190,7 @@ if uploaded_file:
             st.markdown(f"**Answer:** {answer}")
             if justification:
                 st.markdown(f"> _{justification}_")
-            st.experimental_rerun()
+            st.rerun()  # ✅ fixed here
 
     elif mode == "Challenge Me":
         if st.button("💡 Give me a logic-based question"):
